@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
       - name: evaluation-service
-        image: 239510186324.dkr.ecr.us-east-1.amazonaws.com/evaluation-service:latest
+        image: 239510186324.dkr.ecr.us-east-1.amazonaws.com/evaluation-service:ca8ee83bf7107aba37f1198042b7c55734c2cde6
         ports:
         - containerPort: 8080
