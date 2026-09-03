@@ -21,3 +21,5 @@ spec:
         envFrom:
         - configMapRef:
             name: evaluation-service-config
+        - secretRef:
+            name: togglemaster-secrets
