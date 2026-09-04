@@ -29,3 +29,8 @@ spec:
             secretKeyRef:
               name: togglemaster-secrets
               key: SERVICE_API_KEY
+        - name: MASTER_KEY
+          valueFrom:
+            secretKeyRef:
+              name: togglemaster-secrets
+              key: MASTER_KEY
