@@ -34,3 +34,11 @@ spec:
             secretKeyRef:
               name: togglemaster-secrets
               key: MASTER_KEY
+        - name: OTEL_EXPORTER_OTLP_ENDPOINT
+          value: http://otel-collector.observability.svc.cluster.local:4317
+        - name: OTEL_EXPORTER_OTLP_PROTOCOL
+          value: grpc
+        - name: OTEL_RESOURCE_ATTRIBUTES
+          value: deployment.environment=prod,service.version=1.0.0
+        - name: OTEL_SERVICE_NAME
+          value: auth-service
